@@ -123,11 +123,7 @@ fun RichTextEditor(
     CompositionLocalProvider(LocalTextSelectionColors provides colors.selectionColors) {
         BasicRichTextEditor(
             state = state,
-            modifier = modifier
-                .defaultMinSize(
-                    minWidth = TextFieldDefaults.MinWidth,
-                    minHeight = TextFieldDefaults.MinHeight
-                ),
+            modifier = modifier,
             enabled = enabled,
             readOnly = readOnly,
             textStyle = mergedTextStyle,
